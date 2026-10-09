@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizCraft</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+}
+
+/* TOP BANNER */
+.hero {
+    height: 650px;
+    color: white;
+    background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVIGATION */
+nav {
+    height: 110px;
+    padding: 0 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: #b5d94c;
+}
+
+/* CENTER CONTENT */
+.content {
+    text-align: center;
+    padding-top: 165px;
+}
+
+.content h1 {
+    font-size: 43px;
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 28px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.btn-green {
+    border-color: #b5d94c;
+    color: #b5d94c;
+}
+
+.btn:hover {
+    background: #b5d94c;
+    color: black;
+    border-color: #b5d94c;
+}
+
+/* FOUR SMALL BOXES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 125px;
+}
+
+.feature {
+    width: 72px;
+    padding: 10px 5px;
+    background: #2229;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* SERVICES */
+.services {
+    min-height: 350px;
+    padding: 60px 11%;
+    background: #fff;
+    color: #555;
+}
+
+.services h2 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.service .symbol {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.service p {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+    nav {
+        height: auto;
+        padding: 25px 15px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 650px;
+        padding-bottom: 35px;
+    }
+
+    .content {
+        padding: 110px 15px 0;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .features {
+        margin-top: 85px;
+    }
+
+    .service-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO BANNER -->
+<section class="hero" id="home">
+
+    <nav>
+        <div class="logo">BizCraft</div>
+
+        <ul>
+            <li><a href="#" onclick="return false;">HOME ⌄</a></li>
+            <li><a href="#" onclick="return false;">COMPANY ⌄</a></li>
+            <li><a href="#" onclick="return false;">PORTFOLIO ⌄</a></li>
+            <li><a href="#" onclick="return false;">PAGES ⌄</a></li>
+            <li><a href="#" onclick="return false;">BLOG ⌄</a></li>
+            <li><a href="#" onclick="return false;">FEATURES ⌄</a></li>
+            <li><a href="#" onclick="return false;">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <h1>NEED TO INVENT THE FUTURE!</h1>
+
+        <p>WE MAKING DIFFERENCE TO GREAT THINGS POSSIBLE</p>
+
+        <a href="#" onclick="return false;" class="btn">
+            START NOW
+        </a>
+
+        <a href="#" onclick="return false;" class="btn btn-green">
+            LEARN MORE
+        </a>
+
+        <div class="features">
+            <div class="feature">🚲<br>Invent</div>
+            <div class="feature">🛏️<br>Dream</div>
+            <div class="feature">⚙️<br>Tech</div>
+            <div class="feature">🎥<br>Video</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services">
+
+    <h2>⚙ SERVICE WE PROVIDE</h2>
+
+    <p class="subtitle">
+        We provide the best service for your business
+    </p>
+
+    <div class="service-list">
+
+        <div class="service">
+            <div class="symbol">🌐</div>
+            <h3>WEB DESIGN</h3>
+            <p>Modern and responsive web design for your business growth.</p>
+        </div>
+
+        <div class="service">
+            <div class="symbol">⚙</div>
+            <h3>APP DEVELOPMENT</h3>
+            <p>Build powerful mobile apps that bring your ideas to life.</p>
+        </div>
+
+        <div class="service">
+            <div class="symbol">🛒</div>
+            <h3>E-COMMERCE SOLUTIONS</h3>
+            <p>Create online stores that sell and grow your brand.</p>
+        </div>
+
+        <div class="service">
+            <div class="symbol">♧</div>
+            <h3>DIGITAL MARKETING</h3>
+            <p>Get more traffic, more leads and more sales.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
